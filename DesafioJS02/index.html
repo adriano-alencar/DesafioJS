@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="module" src="modulo.js" ></script> -->
+    <script src="script.js"></script>
+    <title>ME ACHA !</title>
+</head>
+<body>
+    <header id="topHeader" class="flex fontFamilyPadrao" >
+        <div >
+            <h1 class="flex alignItem fonth1">ME ACHA !</h1>
+          
+            <h2 class="flex alignItem fonth2">ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+        </div>
+        
+    </header>
+    <main>
+        <div id="areaicon" class="flex">
+                 <span class="material-symbols-outlined flex" >
+                    travel_explore
+                 </span>
+        </div>
+
+        <section id="formulario" class="fontFamilyPadrao flex">
+            <form method="post" name="buscadorCep">
+            
+                <label form="numeroCep" >Cep</label>
+                <input type="text"  class="boxtxt" id="numeroCep" name=""  placeholder="Digite um CEP válido" value="">
+
+                <label form="logradouro">Rua</label>
+                <input type="text"  class="boxtxt" id="logradouro" name="logradouro" value="" disabled>
+
+                <label form="bairro">Bairro</label>
+                <input type="text"  class="boxtxt" id="bairro" name="bairro" value="" disabled>
+
+                <label form="localidade">Cidade</label>
+                <input type="text"  class="boxtxt" id="localidade" name="localidade" value="" disabled>
+
+                <label form="uf">Estado</label>
+                <input type="text"  class="boxtxt" id="uf" name="uf" value="" disabled>
+              
+               
+                <input id="btnBuscarCep" class="fontFamilyPadrao" type="button" name="buscadorCep" value="BUSCAR" >
+
+            </form>
+
+
+        </section>
+    </main>
+    <footer></footer>    
+</body>
+</html>
