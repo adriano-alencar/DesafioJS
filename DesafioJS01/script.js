@@ -9,20 +9,23 @@ window.onload = function(){
     ]
    
     const produtos /*3*/ = document.querySelector("#produtos");
-    // const Total = document.querySelector("#mostraTotalCompra");
+   
 
 
 
 
 (()=>{
+
+
     for( let pro /*2*/ of listaProdutos/*1*/ ){
         const filhoLi = document.createElement('li');
 
         for(listaP in pro /*2*/){
             if(listaP =='preco'){
-                produtos/*3*/.appendChild(filhoLi).setAttribute('date-preco', pro/*2*/[listaP])
-                
-            }else{produtos/*3*/.appendChild(filhoLi).textContent = `${pro/*2*/[listaP]}`
+                produtos/*3*/.appendChild(filhoLi).setAttribute('date-preco', pro/*2*/[listaP]);
+
+
+            }else{produtos/*3*/.appendChild(filhoLi).textContent = `${pro/*2*/[listaP]}`;
 
             }
             
@@ -37,24 +40,37 @@ window.onload = function(){
         const cestaCliente /*4*/= document.querySelector('#cestaDoCliente');
 
             ulListaCompras.forEach(fruta => {
-
-                const filhoLi = document.createElement('li');
-            
+                
+            const filhoLi = document.createElement('li');
+                
+                
+                
 
                 fruta.addEventListener('click', () => {
-
+                 
+    
+                    
                     const listaCesta = cestaCliente /*4*/.appendChild(filhoLi);
+                   
 
+                    
                         if (listaCesta.innerHTML !=/*diferente*/ fruta.innerHTML){
-
+                            
                             listaCesta.innerHTML = /* recebe*/fruta.innerHTML
+
+                            
                         }else {
                             alert(" A fruta já está na Cesta")
-                        };               
-                });                    
+                        };   
+                        
+
+                });   
+                
+                             
             }); 
-        
-      
+            
+                   
+                    
 }
 
 
