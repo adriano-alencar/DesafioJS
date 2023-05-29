@@ -32,36 +32,27 @@ window.onload = function(){
 
 } )()
 
-const ulListaCompras = document.querySelectorAll("#produtos li");
-const cestaCliente = document.querySelector('#cestaDoCliente');
+        const ulListaCompras = document.querySelectorAll("li");
 
-    ulListaCompras.forEach(fruta => {
-        fruta.addEventListener('click', () => {
+        const cestaCliente /*4*/= document.querySelector('#cestaDoCliente');
 
-             alert('Item clicado:', fruta.textContent);
+            ulListaCompras.forEach(fruta => {
 
-
-
-
-            //-------------------------------------
-                     
-              
-
-              
-                var titulo = document.createElement('li');
-
-                
-                document.cestaCliente.appendChild('li').textContent = listaProdutos.value
+                const filhoLi = document.createElement('li');
             
-                elemento_pai.appendChild('#cestaDoCliente');
-                        
-         //-----------------
-         
-   
 
+                fruta.addEventListener('click', () => {
 
-    });
-  });     
+                    const listaCesta = cestaCliente /*4*/.appendChild(filhoLi);
+
+                        if (listaCesta.innerHTML !=/*diferente*/ fruta.innerHTML){
+
+                            listaCesta.innerHTML = /* recebe*/fruta.innerHTML
+                        }else {
+                            alert(" A fruta já está na Cesta")
+                        };               
+                });                    
+            }); 
         
       
 }
